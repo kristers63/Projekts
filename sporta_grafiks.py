@@ -12,3 +12,11 @@ def meklēt_pēc_datuma(datums_str):
     except Exception as e:
         print("Kļūda:", e)
         
+def filtrēt_un_saglabāt(kolone, vērtība):
+    df_filtrs = df[df[kolone].str.lower() == vērtība.lower()]
+    if df_filtrs.empty:
+        print(f"Nav atrasts neviens treniņš ar: {kolone} = {vērtība}")
+    else:
+        fails = f"Treniņi_filtrēti_{kolone}_{vērtība}.xlsx".replace(" ", "_")
+        df_filtrs.to_excel(fails, index=False)
+        print(f"Rezultāts saglabāts: {fails}")        
