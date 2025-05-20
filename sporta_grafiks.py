@@ -23,11 +23,11 @@ def filtrēt_un_saglabāt(kolone, vērtība):
 
 while True:
     print("\n--- Treniņu grafika meklēšana ---")
-    print("1. Meklēt treniņu pēc datuma (DD.MM.YYYY)")
-    print("2. Filtrēt treniņus pēc nedēļas dienas")
-    print("3. Filtrēt treniņus pēc vietas")
-    print("4. Filtrēt treniņus pēc laika")
-    print("0. Iziet")
+    print("Spiest 1, lai meklētu treniņu pēc datuma (DD.MM.YYYY)")
+    print("Spiest 2, lai filtrētu treniņus pēc nedēļas dienas")
+    print("Spiest 3, lai filtrētu treniņus pēc vietas")
+    print("Spiest 4, lai filtrētu treniņus pēc laika")
+    print("Spiest 0, lai izietu no programmas")
     izvēle = input("Tava izvēle: ")
 
     if izvēle == "1":
@@ -43,7 +43,7 @@ while True:
         laiks = input("Ievadi laiku (piemēram, 18:00): ")
         filtrēt_un_saglabāt("Laiks", laiks)
     elif izvēle == "0":
-        print("Programma beidzas.")
+        print("Programma beidzas. Visu labu!")
         break
     else:
         print("Nederīga izvēle.")        
