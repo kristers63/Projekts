@@ -39,12 +39,12 @@ class TreninuGrafiks:
 grafiks = TreninuGrafiks("Treninu_grafiks2025.xlsx")
 
 while True:
-    print("\n---- Treniņu grafika meklēšana tabulā ----")
-    print("Spiest 1, lai meklētu treniņu pēc datuma (DD.MM.YYYY)")
-    print("Spiest 2, lai filtrētu treniņus pēc nedēļas dienas")
-    print("Spiest 3, lai filtrētu treniņus pēc vietas")
-    print("Spiest 4, lai filtrētu treniņus pēc laika")
-    print("Spiest 0, lai izietu")
+    print("\n--- Treniņu grafika meklēšana ---")
+    print("1. Meklēt treniņu pēc datuma (DD.MM.YYYY)")
+    print("2. Filtrēt treniņus pēc nedēļas dienas")
+    print("3. Filtrēt treniņus pēc vietas")
+    print("4. Filtrēt treniņus pēc laika")
+    print("0. Iziet")
     izvēle = input("Tava izvēle: ")
 
     if izvēle == "1":
@@ -60,7 +60,7 @@ while True:
         laiks = input("Ievadi laiku (piemēram, 17:00): ")
         grafiks.filtrēt_un_saglabāt("laiks", laiks)
     elif izvēle == "0":
-        print("Programmas beigas. Visu labu!")
+        print("Programma beidzas.")
         break
     else:
-        print("Nepareiza komanda")
+        print("Nederīga izvēle.")        
